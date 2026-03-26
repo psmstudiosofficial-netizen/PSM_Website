@@ -1,0 +1,284 @@
+/* RESET */
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  background-color: #0d0d0d;
+  color: white;
+  line-height: 1.5;
+}
+
+/* Header */
+header {
+  padding: 20px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header nav a {
+  color: #aaa;
+  margin-left: 20px;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+header p {
+  color: #999;
+  font-size: 14px;
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+  width: 100%;
+  height: 90vh;
+  overflow: hidden;
+}
+
+.hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: grayscale(100%) brightness(0.8);
+}
+
+.hero-text {
+  position: absolute;
+  bottom: -230px;
+  left:20px;
+  color: white;
+}
+
+.hero-text h1 {
+  font-size: 60px;
+  font-weight: 800;
+  line-height: 0.9;
+}
+
+.hero-text h1 span {
+  color: white;
+}
+
+.hero-text h3 {
+  font-size: 22px;
+  font-weight: 400;
+  margin-top: 10px;
+  color: #ccc;
+}
+
+.social-links {
+  list-style: none;
+  position: absolute;
+  top: 40%;
+  left: -60px;
+  transform: rotate(-90deg);
+}
+
+.social-links li {
+  display: inline;
+  margin-right: 30px;
+}
+
+.social-links a {
+  color: #999;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+/* Intro Section */
+.intro {
+  background-color: black;
+  padding: 100px 150px;
+  text-align: left;
+}
+
+.intro h4 {
+  color: #ff3b30;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.intro h2 {
+  font-size: 32px;
+  line-height: 1.4;
+  font-weight: 500;
+  margin-bottom: 20px;
+  color: #857e7e;
+}
+
+.intro .highlight {
+  color: #ff3b30;
+  font-weight: 600;
+}
+
+.intro p {
+  color: #999;
+  max-width: 600px;
+  margin-bottom: 40px;
+}
+
+.intro button {
+  background: transparent;
+  color: white;
+  border: 1px solid #555;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.intro button:hover {
+  border-color: #ff3b30;
+  color: #ff3b30;
+}
+
+/* Services Section */
+.services {
+  background-color: #0f0f0f;
+  padding: 100px 150px;
+}
+
+.services h4 {
+  color: #ff3b30;
+  margin-bottom: 40px;
+}
+
+.service-box {
+  display: flex;
+  align-items: flex-start;
+  gap: 60px;
+}
+
+.service-box h1 {
+  font-size: 120px;
+  color: #222;
+  font-weight: 800;
+}
+
+.service-content h2 {
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.service-content p {
+  color: #999;
+  max-width: 600px;
+  margin: 20px 0 40px;
+}
+
+.service-content ul {
+  list-style: none;
+}
+
+.service-content li {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #222;
+  padding: 10px 0;
+  color: white;
+  font-size: 16px;
+}
+
+.service-content li span {
+  color: #555;
+}
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Poppins',sans-serif;
+}
+
+
+
+/* HERO SECTION */
+.hero{
+  position:relative;
+  height:100vh;
+  width:100%;
+  overflow:hidden;
+  display:flex;
+  align-items:center;
+  justify-content:flex-end;
+  background:#000;
+}
+
+.hero img{
+  position:absolute;
+  top:0;left:0;
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  filter:grayscale(100%) brightness(0.4);
+  z-index:1;
+  animation:fadeBG 12s ease-in-out infinite alternate;
+}
+
+/* TEXT AREA */
+.hero-text{
+  position:relative;
+  z-index:2;
+  width:50%;
+  text-align:right;
+  padding:0 6vw;
+  animation:fadeText 12s ease-in-out infinite alternate;
+}
+
+/* LIQUID EFFECT TEXT */
+.liquid-text{
+  font-size:7vw;
+  font-weight:900;
+  background:linear-gradient(90deg,#000,#ddb00bf4,#000);
+  background-size:200% 200%;
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+  animation:waveMove 6s ease-in-out infinite, fadeText 12s ease-in-out infinite alternate;
+}
+
+/* Paragraph */
+.hero-text p{
+  margin-top:20px;
+  color:#eee;
+  font-size:1.2rem;
+  line-height:1.6;
+  max-width:500px;
+  float:right;
+}
+
+/* ANIMATIONS */
+@keyframes waveMove{
+  0%{background-position:0% 50%;}
+  50%{background-position:100% 50%;}
+  100%{background-position:0% 50%;}
+}
+
+@keyframes fadeText{
+  0%,100%{opacity:0.2;}
+  20%,80%{opacity:1;}
+}
+
+@keyframes fadeBG{
+  0%,100%{filter:grayscale(100%) brightness(0.4);}
+  50%{filter:grayscale(60%) brightness(0.8);}
+}
+
+/* RESPONSIVE */
+@media(max-width:900px){
+  .hero-text{
+    width:90%;
+    text-align:center;
+    padding:0 5vw;
+  }
+  .liquid-text{
+    font-size:10vw;
+  }
+  .hero-text p{
+    float:none;
+    margin:10px auto 0;
+  }
+}
