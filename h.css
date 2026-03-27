@@ -21,6 +21,18 @@ header {
   align-items: center;
 }
 
+.header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Logo styling */
+.logo img{
+  height: 40px;   /* adjust size if needed */
+  width: auto;
+}
+
 header nav a {
   color: #aaa;
   margin-left: 20px;
